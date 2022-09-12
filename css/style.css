@@ -274,9 +274,9 @@ body {
 }
 
 .circle.inprogress {
-    background: rgb(167, 183, 233);
+    background: rgb(144, 147, 233);
 }
 
 .circle.complete {
-    background: rgb(75, 185, 174);
+    background: rgb(55, 231, 146);
 }
