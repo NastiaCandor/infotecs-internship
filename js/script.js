@@ -258,7 +258,7 @@ inputSearch.addEventListener('input', () => {
     let searchData = inputSearch.value.trim(); // Данные с ввода поиска
     if (searchData) { // Если поиск не пустой
         tasks.forEach( (item, index) => {
-            if (!item.description.includes(searchData)) {
+            if (!item.description.toLowerCase().includes(searchData.toLowerCase())) {
                 todoItem.item(index).classList.add('hidden'); // Сокрытие отфлильтрованных задач
             } else {
                 todoItem.item(index).classList.remove('hidden'); // Показ необходимых задач при сокращении поиска
