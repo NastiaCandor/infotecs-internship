@@ -1,0 +1,282 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	color: black;
+	padding: 0;
+	margin: 0;
+    background-color: rgb(254, 232, 232);
+}
+
+.header {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.todo-list-wrapper {
+    width: 350px;
+    background-color: rgb(189, 139, 159);
+    text-align: center;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.todo-list-content {
+    width: 100%;
+}
+
+#resize {
+    float: right;
+    margin-right: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: e-resize;
+    position: absolute;
+    left: 99%;
+}
+
+.list-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.todo-edit {
+    text-align: center;
+    min-width: 550px;
+    width: 760px;
+    background-color: #fff;
+    
+}
+
+.todo-title {
+    font-size: 20px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.todoName {
+    font-size: 24px;
+    color:rgb(105, 105, 105);
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.add-todo-wrapper input{
+    width: 90%;
+}
+
+.search-todo {
+    width: 93%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button.hidden {
+    display: none;
+}
+
+.btn-wrapper {
+    display: none;
+    margin: 15px;
+}
+
+.btn-wrapper.active {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.button #btn-add {
+    padding: 10px 10px;
+    background-color: rgb(136, 78, 101);
+    font-size: 18px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button #btn-add:hover {
+    background-color: rgb(216, 149, 216);
+}
+
+.button #btn-save {
+    padding: 10px 10px;
+    background-color: rgb(136, 78, 101);
+    font-size: 18px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button #btn-save:hover {
+    background-color: rgb(216, 149, 216);
+}
+
+.button #btn-delete {
+    padding: 10px 10px;
+    background-color: rgb(212, 72, 72);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button #btn-delete:hover {
+    background-color: #951212c4;
+}
+
+.button #btn-edit {
+    padding: 10px 10px;
+    background-color: rgb(136, 78, 101);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button #btn-edit:hover {
+    background-color: rgb(167, 104, 167);
+}
+
+#btn-new {
+    padding: 10px 10px;
+    background-color: rgb(136, 78, 101);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 13.2px;
+    left: 87%;
+}
+
+#btn-new:hover {
+    background-color: rgb(167, 104, 167);
+}
+
+.button-task {
+    padding: 10px 35px 10px 35px;
+    background-color: rgb(209, 155, 190);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    width: 94%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.button #btn-waiting {
+    padding: 10px 10px;
+    background-color: rgb(140, 116, 125);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button #btn-waiting:hover {
+    background-color: rgb(184, 163, 170);
+}
+
+.button #btn-inprogress {
+    padding: 10px 10px;
+    background-color: rgb(107, 90, 158);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button #btn-inprogress:hover {
+    background-color: rgb(143, 129, 183);
+}
+
+.button #btn-completed {
+    padding: 10px 10px;
+    background-color: rgb(78, 154, 146);
+    font-size: 15px;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button #btn-completed:hover {
+    background-color: rgb(129, 188, 182);
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    position: absolute;
+    top: 12px;
+    left: 89%;
+    cursor: pointer;
+}
+
+.circle.waiting {
+    background: rgb(213, 212, 212);
+}
+
+.circle.inprogress {
+    background: rgb(167, 183, 233);
+}
+
+.circle.complete {
+    background: rgb(75, 185, 174);
+}

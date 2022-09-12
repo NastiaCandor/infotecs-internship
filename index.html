@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TODO-list</title>
+</head>
+<body> 
+    <header class="header">
+        <h1>To-do list</h1>
+    </header>
+    <div class="wrapper">
+        
+        <div class="todo-list-wrapper">
+            <div class="todo-list-content">
+                <div class="list-header">
+                    <h2>Список задач</h2>
+                    <button id="btn-new">+</button>
+                </div>
+                <input type="text" id="search-todo" class="search-todo" placeholder="Поиск задачи...">
+                <div class="todo-list">
+                </div> 
+            </div>
+
+            <div id="resize"></div> 
+        </div>
+        <div class="todo-edit">
+            <p class="todo-title">
+                Новая задача
+            </p>
+            <div class="form active">
+                <div class="add-todo-wrapper">
+                    <input type="text" id="description-todo" placeholder="Задача..." name="task" required>
+                </div>
+                <div class="button">
+                    <button id="btn-add">Добавить</button>
+                </div>
+                <div class="button hidden">
+                    <button id="btn-save">Сохранить</button>
+                </div>
+            </div>
+
+            <div class="btn-wrapper">
+                <div class="button">
+                    <button id="btn-delete">Удалить</button>
+                </div>
+                <div class="button">
+                    <button id="btn-edit">Редактировать</button>
+                </div>
+                <div class="button">
+                    <button id="btn-waiting">Ожидает</button>
+                </div>
+                <div class="button">
+                    <button id="btn-inprogress">В процессе</button>
+                </div>
+                <div class="button">
+                    <button id="btn-completed">Выполнена</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
