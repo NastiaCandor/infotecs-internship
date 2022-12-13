@@ -1,6 +1,8 @@
 # infotecs-internship
 **Тестовое задание стажера на позицию «Программист на языке JS»**
 
+[Todo-list](https://nastiacandor.github.io/infotecs-internship-autumn22/) - ссылка на выполненное задания.
+
 Целью задания является написание TODO List приложения.
 
 Выполненные цели:
